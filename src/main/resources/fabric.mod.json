@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "pingintablist",
+  "version": "${version}",
+  "name": "PingInTablist",
+  "description": "A mod, which changed the Ping icons to text",
+  "authors": [
+    "Alex_265"
+  ],
+  "contact": {},
+  "license": "AGPLv3",
+  "icon": "assets/pingintablist/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "at.alex.pingintablist.client.PingInTablistClient"
+    ],
+    "main": [
+      "at.alex.pingintablist.PingInTablist"
+    ]
+  },
+  "mixins": [
+    "pingintablist.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
