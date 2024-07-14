@@ -9,6 +9,6 @@ public class PingInTablistClient implements ClientModInitializer {
     public static Logger logger = LoggerFactory.getLogger(MODID);
     @Override
     public void onInitializeClient() {
-
+        logger.info("Initializing Ping in Tablist");
     }
 }
